@@ -8,7 +8,7 @@ onMounted(() => {
 })
 </script>
 <template>
-    <nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+    <nav class="border-gray-200 bg-gray-100 dark:bg-gray-800 dark:border-gray-700">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <router-link to="/" class="flex items-center">
                 <img src="../assets/github1.svg" class="h-8 mr-3" alt="GitHub Logo" />
@@ -49,5 +49,5 @@ onMounted(() => {
 <style scoped>
 .router-link-active {
     color: #0284c7;
-    }
+}
 </style>
