@@ -6,14 +6,14 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 // Importar componentes para las rutas
 import Home from './views/Home.vue'
-import About from './views/About.vue'
+import Activities from './views/Activities.vue'
 import NotFound from './views/NotFound.vue'
-import Lista from './views/Lista.vue'
+import Develop from './views/Develop.vue'
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/about', component: About },
-  { path: '/lista', component: Lista },
+  { path: '/activities', component: Activities },
+  { path: '/developer', component: Develop },
   { path: '/:pathMatch(.*)*', component: NotFound },
 ]
 
