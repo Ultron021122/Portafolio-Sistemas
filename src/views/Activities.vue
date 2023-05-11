@@ -1,6 +1,7 @@
 <script setup>
-import Navbar from '../components/Navigation.vue'
-import Accordion from '../components/Accordion.vue'
+import Navbar from '../components/Navigation.vue';
+import AccordionTop from '../components/AccordionTop.vue';
+import AccordionCenter from '../components/AccordionCenter.vue';
 </script>
 <template>
     <Navbar></Navbar>
@@ -11,8 +12,28 @@ import Accordion from '../components/Accordion.vue'
                     class="ml-2 font-semibold text-gray-500 dark:text-gray-400">Introducción a los sistemas
                     operativos</small></h2>
         </div>
-        <Accordion msg="Hello"></Accordion>
-        <Accordion msg="Hello-J"></Accordion>
+        <AccordionTop>
+            <template v-slot:title>
+                What is Flowbite?
+            </template>
+            <template v-slot:content>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
+                accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
+                itaque consectetur impedit?
+            </template>
+        </AccordionTop>
+        <AccordionCenter>
+            <template v-slot:title>
+                What is Flowbite?
+            </template>
+            <template v-slot:content>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
+                accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
+                itaque consectetur impedit?
+            </template>
+        </AccordionCenter>
     </main>
 </template>
 <style scoped>
