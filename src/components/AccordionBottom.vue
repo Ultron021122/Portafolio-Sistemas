@@ -1,7 +1,11 @@
 <template>
     <h2>
-        <button @click="toggleAccordion()"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-100 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+        <button @click="toggleAccordion()" type="button"
+        :class="{
+            'hover:bg-gray-100 dark:hover:bg-sky-700 dark:hover:text-gray-200 dark:focus:text-white': !isOpen,
+            'bg-gray-100 dark:bg-gray-700 dark:text-white': isOpen
+        }"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400"
             :aria-expanded="isOpen" :aria-controls="`collapse${_uid}`">
             <span><slot name="title" /></span>
             <svg class="w-6 h-6 transition-all duration-200 transform" :class="{ 'rotate-180': isOpen, 'rotate-0': !isOpen, }"
@@ -22,13 +26,6 @@
 </template>
   
 <script>
-import { onMounted } from 'vue'
-import { initCollapses } from 'flowbite'
-
-// initialize components based on data attribute selectors
-onMounted(() => {
-    initCollapses();
-});
 export default {
     data() {
         return {
