@@ -8,7 +8,8 @@ import Navbar from '../components/Navigation.vue'
         <h1
             class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white">
             Bienvenido al sitio de actividades del semestre</h1>
-        <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Aqui encontrarás un recopilatorio
+        <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Aqui encontrarás
+            un recopilatorio
             de todas las actividades realizadas durante el semestre, organizadas de manera clara y accesible.</p>
         <a href="/activities"
             class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">

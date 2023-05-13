@@ -1,4 +1,4 @@
-<script setup>
+<script>
 import { onMounted } from 'vue'
 import { initCollapses } from 'flowbite'
 
