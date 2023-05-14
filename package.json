@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "flowbite": "^1.6.5",
+    "rellax": "^1.12.1",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },

@@ -1,8 +1,11 @@
 <template>
     <Navbar></Navbar>
-    <main class="container mx-auto">
-        <h1 class="my-5 text-4xl text-center font-extrabold dark:text-white">Uso, Adaptación y Explotación de Sistemas
-            Operativos</h1>
+    <main class="container mx-auto md:w-11/12 lg:w-3/4 mb-24 ">
+        <div class="typewriter" v-if="showText">
+            <h1 class="my-5 text-4xl text-center font-extrabold dark:text-white" v-for="(char, index) in textWithSpaces" :key="index" :style="{ 'animation-delay': `${index * delay}ms` }">
+                {{ char === ' ' ? '\u00A0' : char }}
+            </h1>
+        </div>
         <div class="mt-10">
             <h2 class="text-center text-2xl md:text-3xl font-bold dark:text-white">Unidad temática 1.<small
                     class="ml-2 flex justify-center md:inline-block font-semibold text-gray-500 dark:text-gray-400">Introducción
@@ -10,7 +13,7 @@
                     operativos</small></h2>
         </div>
         <!-- Acordeón de la Unidad 1 -->
-        <div class="md:w-11/12 lg:w-3/4 mx-auto my-10">
+        <div class="my-10">
             <!-- Primer bloque del acordeón -->
             <AccordionTop>
                 <template v-slot:title>
@@ -97,8 +100,34 @@
                 </template>
             </AccordionBottom>
         </div>
-
     </main>
+    <section class="bg-white dark:bg-gray-900">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-16 lg:px-6">
+            <div class="max-w-screen-md mb-8 lg:mb-16">
+                <h2 class="mb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">Designed for business teams
+                    like yours</h2>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where
+                    technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto md:w-11/12 lg:w-3/4 my-10">
+        <div id="actividad0">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-3 bg-white border border-gray-200 rounded-lg shadow w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600">
+                <div class="p-2 h-96 mx-2 xl:mx-10">
+                    <iframe src="https://drive.google.com/file/d/1Lo_p-RdezYwaeX-EtgQGnyqqBobvYidC/preview"
+                        class="object-cover w-full h-full rounded-lg"></iframe>
+                </div>
+                <div class="p-4">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+                        acquisitions 2021</h5>
+                    <p class="mb-3 text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions
+                        of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 <script>
 import Navbar from '../components/Navigation.vue';
@@ -115,19 +144,55 @@ export default {
         AccordionBottom,
         GridActivities,
     },
+    data() {
+        return {
+            text: " Uso, Adaptación y Explotación de Sistemas Operativos.",
+            showText: false,
+            delay: 100, // Tiempo de retraso entre cada carácter (en milisegundos)
+        };
+    },
+    computed: {
+        textWithSpaces() {
+            return this.text.split('').map((char) => char === ' ' ? ' ' : char);
+        },
+    },
+    mounted() {
+        this.showText = true;
+    },
     methods: {
-        scrollToElement(event) {
-            event.preventDefault();
-            const targetId = event.target.getAttribute("href");
-            const targetElement = document.querySelector(targetId);
+        scrollToElement(elementId) {
+            const targetElement = document.querySelector(elementId);
             if (targetElement) {
                 targetElement.scrollIntoView({ behavior: "smooth" });
             }
-        }
-    }
+        },
+    },
 };
 </script>
 <style scoped>
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.typewriter h1 {
+    display: inline-block;
+    animation: typing 0.8s steps(40) forwards;
+    animation-delay: 0ms;
+    opacity: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 @media (min-width: 480px) {
     .container {
         max-width: 90%;
@@ -136,6 +201,17 @@ export default {
 
 .container {
     max-width: 95%;
+}
+
+.zoom {
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 </style>
 <!-- 
