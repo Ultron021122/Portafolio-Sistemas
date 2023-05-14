@@ -55,57 +55,45 @@
                     Actividades
                 </template>
                 <template v-slot:content>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 justify-items-center items-center">
-                        <div class="col-span-2 md:col-span-1">
-                            <p class=" text-center">Actividad de aprendizaje 0 <br> Libros y portada</p>
-                        </div>
-                        <div>
-                            <p class="">29-ene-2023</p>
-                        </div>
-                        <div class="">
-                            <a href="#actividad0" @click="scrollToElement"
-                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                    <p class="text-center">A continuación se muestras las actividades de aprendizajes
+                        realizadas en la unidad.</p>
+                    <hr class="border-t border-gray-700 mt-2">
+                    <!-- Actividad 0 -->
+                    <GridActivities>
+                        <template v-slot:title>
+                            Actividad de aprendizaje 0
+                        </template>
+                        <template v-slot:name-activity>
+                            Libros y portada
+                        </template>
+                        <template v-slot:date>
+                            29-ene-2023
+                        </template>
+                        <template v-slot:link>
+                            <button @click="scrollToElement('#actividad0')"
+                                class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
                                 Ver actividad
-                            </a>
-                        </div>
-                        <div class="col-span-2 md:col-span-1 mt-3">
-                            <p class=" text-center">Actividad de aprendizaje 1 <br> Evolución, concepto</p>
-                        </div>
-                        <div>
-                            <p class="">29-ene-2023</p>
-                        </div>
-                        <div class="">
-                            <a href="#actividad1" @click="scrollToElement"
-                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                            </button>
+                        </template>
+                    </GridActivities>
+                    <!-- Actividad 1 -->
+                    <GridActivities>
+                        <template v-slot:title>
+                            Actividad de aprendizaje 1
+                        </template>
+                        <template v-slot:name-activity>
+                            Evolución y concepto
+                        </template>
+                        <template v-slot:date>
+                            29-ene-2023
+                        </template>
+                        <template v-slot:link>
+                            <button @click="scrollToElement('#actividad1')"
+                                class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
                                 Ver actividad
-                            </a>
-                        </div>
-                        <div class="col-span-2 md:col-span-1 mt-3 text-center">
-                            <p>Actividad de aprendizaje 2 </p>
-                            <p>Estructura o Modelo SO</p>
-                        </div>
-                        <div>
-                            <p class="">29-ene-2023</p>
-                        </div>
-                        <div class="">
-                            <a href="#actividad2" @click="scrollToElement"
-                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                                Ver actividad
-                            </a>
-                        </div>
-                        <div class="col-span-2 md:col-span-1 mt-3">
-                            <p class=" text-center">Actividad de aprendizaje 3 <br> Libros y portada</p>
-                        </div>
-                        <div>
-                            <p class="">29-ene-2023</p>
-                        </div>
-                        <div class="">
-                            <a href="#elementId" @click="scrollToElement"
-                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                                Ver actividad
-                            </a>
-                        </div>
-                    </div>
+                            </button>
+                        </template>
+                    </GridActivities>
                 </template>
             </AccordionBottom>
         </div>
@@ -117,36 +105,15 @@ import Navbar from '../components/Navigation.vue';
 import AccordionTop from '../components/AccordionTop.vue';
 import AccordionCenter from '../components/AccordionCenter.vue';
 import AccordionBottom from '../components/AccordionBottom.vue';
+import GridActivities from '../components/GridActivities.vue';
 
 export default {
     components: {
         Navbar,
         AccordionTop,
         AccordionCenter,
-        AccordionBottom
-    },
-    data() {
-        return {
-            items: [
-                {
-                    label: 'Introducción a los sistemas operativos',
-                    children: [
-                        { label: 'Definición y generalidades' },
-                        { label: 'Funciones, objetivos y características de los sistemas operativos' },
-                        {
-                            label: 'Evolución histórica de los sistemas operativos',
-                            children: [
-                                { label: 'Procesamiento en serie' },
-                                { label: 'Procesamiento por lotes' },
-                                { label: 'Multiprogramación' },
-                                { label: 'Sistemas de tiempo real' },
-                                { label: 'Sistemas en red' },
-                            ],
-                        },
-                    ],
-                },
-            ],
-        };
+        AccordionBottom,
+        GridActivities,
     },
     methods: {
         scrollToElement(event) {
@@ -160,7 +127,8 @@ export default {
     }
 };
 </script>
-<style scoped>@media (min-width: 480px) {
+<style scoped>
+@media (min-width: 480px) {
     .container {
         max-width: 90%;
     }
@@ -168,4 +136,42 @@ export default {
 
 .container {
     max-width: 95%;
-}</style>
+}
+</style>
+<!-- 
+                     Actividad 2
+                    <GridActivities>
+                        <template v-slot:title>
+                            Actividad de aprendizaje 2
+                        </template>
+                        <template v-slot:name-activity>
+                            Estructura o Modelo SO
+                        </template>
+                        <template v-slot:date>
+                            05-feb-2023
+                        </template>
+                        <template v-slot:link>
+                            <button @click="scrollToElement('#actividad2')"
+                                class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                                Ver actividad
+                            </button>
+                        </template>
+                    </GridActivities>
+                    Actividad 3
+                    <GridActivities>
+                        <template v-slot:title>
+                            Actividad de aprendizaje 3
+                        </template>
+                        <template v-slot:name-activity>
+                            Sistema Operativo
+                        </template>
+                        <template v-slot:date>
+                            12-feb-2023
+                        </template>
+                        <template v-slot:link>
+                            <button @click="scrollToElement('#actividad3')"
+                                class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                                Ver actividad
+                            </button>
+                        </template>
+                    </GridActivities> -->
