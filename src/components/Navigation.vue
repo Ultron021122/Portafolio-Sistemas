@@ -12,7 +12,7 @@ onMounted(() => {
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <router-link to="/" class="flex items-center">
                 <img src="../assets/github1.svg" class="h-8 mr-3" alt="GitHub Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portafolio</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-900 dark:text-white">Portafolio</span>
             </router-link>
             <!-- Mobile Menu -->
             <button data-collapse-toggle="navbar-solid-bg" type="button"
