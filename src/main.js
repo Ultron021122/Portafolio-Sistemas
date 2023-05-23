@@ -14,7 +14,8 @@ const routes = [
   { path: '/', component: Home },
   { path: '/activities', component: Activities },
   { path: '/developer', component: Develop },
-  { path: '/:pathMatch(.*)*', component: NotFound },
+  { path: '/404', component: NotFound }, // Ruta para NotFound
+  { path: '/:pathMatch(.*)', redirect: '/404' }, // Redirección a NotFound
 ]
 
 const router = createRouter({
