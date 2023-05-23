@@ -19,6 +19,7 @@
                 </div>
                 <!-- Descripción de la actividad -->
                 <p class="pr-0 md:pr-2 text-center md:text-left text-gray-700 dark:text-gray-400"><slot name="content" /></p>
+                <div class="pt-5"><slot name="button"/></div>
             </div>
         </div>
     </div>
