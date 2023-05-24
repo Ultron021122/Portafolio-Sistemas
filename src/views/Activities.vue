@@ -303,7 +303,7 @@
         <Card id="actividad2">
             <template v-slot:iframe>
                 <iframe src="https://drive.google.com/file/d/18b-0DFSSKj8FdaOeUPyT8INzmbdtJHVj/preview"
-                    class="object-cover w-full h-full rounded-lg">
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
                     <p>Ocurrio un posible error</p>
                 </iframe>
             </template>
@@ -341,7 +341,7 @@
         <Card id="actividad3">
             <template v-slot:iframe>
                 <iframe src="https://drive.google.com/file/d/1IqyiBr1ABim3eK6lxsvfF3uYupBUvAwp/preview"
-                    class="object-cover w-full h-full rounded-lg">
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
                     <p>Ocurrio un posible error</p>
                 </iframe>
             </template>
@@ -645,7 +645,7 @@
         <Card id="actividad4">
             <template v-slot:iframe>
                 <iframe src="https://drive.google.com/file/d/15eWOBCYmzYh_9F08LSEUv939s5i1mYbm/preview"
-                    class="object-cover w-full h-full rounded-lg">
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
                     <p>Ocurrio un posible error</p>
                 </iframe>
             </template>
@@ -685,7 +685,7 @@
             <template v-slot:iframe>
                 <iframe
                     src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSlblsa9aiTY2VZfSXGWFqgWx3nHmBUk-B6fawrB4tVUixSwh-YLeDnzWZRUoG2gw/pubhtml?widget=true&amp;headers=false"
-                    class="object-cover w-full h-full rounded-lg">
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
                     <p>Ocurrio un posible error</p>
                 </iframe>
             </template>
@@ -738,7 +738,7 @@
         <Card id="actividad6">
             <template v-slot:iframe>
                 <iframe src="https://drive.google.com/file/d/1NgU2bAfB4XKFRohOsCGNfTusJ3-JWkKF/preview"
-                    class="object-cover w-full h-full rounded-lg">
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
                     <p>Ocurrio un posible error</p>
                 </iframe>
             </template>
@@ -774,50 +774,212 @@
                 desempeña y su estructura interna.</template>
         </Card>
         <CardTabs id="actividad7">
-            <template v-slot:iframe>
-                <iframe src="https://drive.google.com/file/d/19oDuFsdTUQAJ_Vw6WzX0AC1NxcgZwzpT/preview"
-                    class="object-cover w-full h-full rounded-lg">
-                    <p>Ocurrio un posible error</p>
-                </iframe>
+            <template v-slot:link>
+                <li class="mr-2">
+                    <button id="info-tab" data-tabs-target="#info" type="button" role="tab" aria-controls="info"
+                        aria-selected="true"
+                        class="inline-block p-4 text-blue-600 rounded-tl-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-blue-500 dark:hover:text-gray-300">Investigación</button>
+                </li>
+                <li class="mr-2">
+                    <button id="present-tab" data-tabs-target="#present" type="button" role="tab" aria-controls="present"
+                        aria-selected="false"
+                        class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Presentación</button>
+                </li>
+                <li class="mr-2">
+                    <button id="actividad-tab" data-tabs-target="#actividad" type="button" role="tab"
+                        aria-controls="actividad" aria-selected="false"
+                        class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Actividad</button>
+                </li>
             </template>
-            <template v-slot:number>7</template>
-            <template v-slot:subtitle>Concurrencia</template>
-            <template v-slot:starts>
-                <!-- Estrellas de calificación -->
-                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <title>First star</title>
-                    <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                    </path>
-                </svg>
-                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <title>Second star</title>
-                    <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                    </path>
-                </svg>
-                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <title>Third star</title>
-                    <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                    </path>
-                </svg>
-                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <title>Fourth star</title>
-                    <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                    </path>
-                </svg>
-            </template>
-            <template v-slot:level>4.0</template>
-            <template v-slot:content>
-                La actividad consiste en realizar una investigación sobre un tema asignado al equipo al
-                inicio del semestre. Los integrantes del equipo deberán trabajar juntos para generar un documento en Google
-                donde se involucren todos, incluyendo una portada grupal con los nombres de los integrantes.
+            <template v-slot:content-1>
+                <div class="hidden p-4 bg-white dark:bg-gray-700" id="info" role="tabpanel" aria-labelledby="info-tab">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="h-96 xl:mx-10">
+                            <iframe src="https://drive.google.com/file/d/19oDuFsdTUQAJ_Vw6WzX0AC1NxcgZwzpT/preview"
+                                class="object-cover w-full h-full rounded-lg" id="info-iframe" loading="lazy">
+                                <p>Ocurrio un posible error</p>
+                            </iframe>
+                        </div>
+                        <div class="my-auto text-center md:text-left">
+                            <h3 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Actividad de
+                                Aprendizaje 7
+                            </h3>
+                            <h4 class="text-base font-semibold text-gray-900 dark:text-white">
+                                Concurrencia
+                            </h4>
+                            <div class="flex items-center justify-center md:justify-normal mt-2.5 mb-5">
+                                <!-- Estrellas de calificación -->
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>First star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Second star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Third star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Fourth star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <!-- Etiqueta de dificultad -->
+                                <span
+                                    class="bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                                    Dificultad: 4.0
+                                </span>
+                            </div>
+                            <!-- Descripción de la actividad -->
+                            <p class="pr-0 md:pr-2 text-center md:text-left text-gray-700 dark:text-gray-400">
+                                La actividad consiste en realizar una investigación sobre un tema asignado al equipo al
+                                inicio del semestre. Los integrantes del equipo tenían que trabajar juntos para generar un
+                                documento en Google
+                                donde se involucrarían todos, incluyendo una portada grupal con los nombres de los integrantes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden p-4 bg-white dark:bg-gray-700" id="present" role="tabpanel"
+                    aria-labelledby="present-tab">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="h-96 xl:mx-10">
+                            <iframe src="https://drive.google.com/file/d/1K7ypxlH4LGnD7HLwHEW2KZP_EfeyQefS/preview"
+                                class="object-cover w-full h-full rounded-lg" id="present-iframe" loading="lazy">
+                                <p>Ocurrio un posible error</p>
+                            </iframe>
+                        </div>
+                        <div class="my-auto text-center md:text-left">
+                            <h3 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Actividad de
+                                Aprendizaje 7
+                            </h3>
+                            <h4 class="text-base font-semibold text-gray-900 dark:text-white">
+                                Concurrencia
+                            </h4>
+                            <div class="flex items-center justify-center md:justify-normal mt-2.5 mb-5">
+                                <!-- Estrellas de calificación -->
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>First star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Second star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Third star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Fourth star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <!-- Etiqueta de dificultad -->
+                                <span
+                                    class="bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                                    Dificultad: 4.0
+                                </span>
+                            </div>
+                            <!-- Descripción de la actividad -->
+                            <p class="pr-0 md:pr-2 text-center md:text-left text-gray-700 dark:text-gray-400">
+                                La actividad consiste en realizar una investigación sobre un tema asignado al equipo al
+                                inicio del semestre. Los integrantes del equipo deberán trabajar juntos para generar un
+                                documento en Google
+                                donde se involucren todos, incluyendo una portada grupal con los nombres de los integrantes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden p-4 bg-white dark:bg-gray-700" id="actividad" role="tabpanel"
+                    aria-labelledby="actividad-tab">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="h-96 xl:mx-10">
+                            <iframe src="https://drive.google.com/file/d/1Nz-9XbsgVr_iWFq002ogpsN4WMqmUyEA/preview"
+                                class="object-cover w-full h-full rounded-lg" id="present-iframe" loading="lazy">
+                                <p>Ocurrio un posible error</p>
+                            </iframe>
+                        </div>
+                        <div class="my-auto text-center md:text-left">
+                            <h3 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Actividad de
+                                Aprendizaje 7
+                            </h3>
+                            <h4 class="text-base font-semibold text-gray-900 dark:text-white">
+                                Concurrencia
+                            </h4>
+                            <div class="flex items-center justify-center md:justify-normal mt-2.5 mb-5">
+                                <!-- Estrellas de calificación -->
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>First star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Second star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Third star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Fourth star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <!-- Etiqueta de dificultad -->
+                                <span
+                                    class="bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                                    Dificultad: 4.0
+                                </span>
+                            </div>
+                            <!-- Descripción de la actividad -->
+                            <p class="pr-0 md:pr-2 text-center md:text-left text-gray-700 dark:text-gray-400">
+                                La actividad consiste en realizar una investigación sobre un tema asignado al equipo al
+                                inicio del semestre. Los integrantes del equipo deberán trabajar juntos para generar un
+                                documento en Google
+                                donde se involucren todos, incluyendo una portada grupal con los nombres de los integrantes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </template>
         </CardTabs>
     </section>
