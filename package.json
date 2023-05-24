@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "flowbite": "^1.6.5",
+    "prismjs": "^1.29.0",
     "rellax": "^1.12.1",
     "vue": "^3.2.47",
+    "vue-prism-component": "^2.0.0",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

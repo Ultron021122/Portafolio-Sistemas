@@ -737,7 +737,7 @@
         </Card>
         <Card id="actividad6">
             <template v-slot:iframe>
-                <iframe src="https://drive.google.com/file/d/1NgU2bAfB4XKFRohOsCGNfTusJ3-JWkKF/preview"
+                <iframe src="https://drive.google.com/file/d/1iRsXYEcxJK7yAViEFPG1zFhRv0iKCZ-2/preview"
                     class="object-cover w-full h-full rounded-lg" loading="lazy">
                     <p>Ocurrio un posible error</p>
                 </iframe>
@@ -892,8 +892,7 @@
                                 del tema de semáforos.
                             </p>
                             <div class="flex items-center justify-center pt-2">
-                                <a href="https://es.educaplay.com/juego/14269751-crucigrama.html"
-                                    target="_black"
+                                <a href="https://es.educaplay.com/juego/14269751-crucigrama.html" target="_black"
                                     class="w-full text-white text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-cyan-600 dark:hover:bg-cyan-700 focus:outline-none dark:focus:ring-cyan-800">
                                     Comenzar actividad
                                 </a>
@@ -903,6 +902,290 @@
                 </div>
             </template>
         </CardTabs>
+        <CardTabs id="actividad8">
+            <template v-slot:link>
+                <li class="mr-2">
+                    <button id="info2-tab" data-tabs-target="#info2" type="button" role="tab" aria-controls="info2"
+                        aria-selected="true"
+                        class="inline-block p-4 text-blue-600 rounded-tl-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-blue-500 dark:hover:text-gray-300">Investigación</button>
+                </li>
+                <li class="mr-2">
+                    <button id="code-tab" data-tabs-target="#code" type="button" role="tab" aria-controls="code"
+                        aria-selected="false"
+                        class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Código</button>
+                </li>
+                <li class="mr-2">
+                    <button id="video-tab" data-tabs-target="#video" type="button" role="tab" aria-controls="video"
+                        aria-selected="false"
+                        class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Video</button>
+                </li>
+            </template>
+            <template v-slot:content-1>
+                <div class="hidden p-4 bg-white dark:bg-gray-700" id="info2" role="tabpanel" aria-labelledby="info2-tab">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="h-96 xl:mx-10">
+                            <iframe src="https://drive.google.com/file/d/1N8Rx7Lqsw2X7IBfm96jikbxmnXkLBgtn/preview"
+                                class="object-cover w-full h-full rounded-lg" id="info-iframe" loading="lazy">
+                                <p>Ocurrio un posible error</p>
+                            </iframe>
+                        </div>
+                        <div class="my-auto text-center md:text-left">
+                            <h3 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Actividad de
+                                Aprendizaje 8
+                            </h3>
+                            <h4 class="text-base font-semibold text-gray-900 dark:text-white">
+                                Barbero Dormilón
+                            </h4>
+                            <div class="flex items-center justify-center md:justify-normal mt-2.5 mb-5">
+                                <!-- Estrellas de calificación -->
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>First star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Second star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Third star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Fourth star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Fifth star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <!-- Etiqueta de dificultad -->
+                                <span
+                                    class="bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                                    Dificultad: 5.0
+                                </span>
+                            </div>
+                            <!-- Descripción de la actividad -->
+                            <p class="pr-0 md:pr-2 text-center md:text-left text-gray-700 dark:text-gray-400">
+                                La actividad consiste en realizar un trabajo en pareja para investigar y resolver el
+                                problema del barbero dormilón. Se debe comprender el problema y luego implementarse en un
+                                programa
+                                en cualquier lenguaje, ya sea en modo gráfico o modo consola..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden p-4 bg-white dark:bg-gray-700" id="code" role="tabpanel" aria-labelledby="code-tab">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="h-96 xl:mx-10">
+                            <iframe src="https://drive.google.com/file/d/1vogo_NgZgjVlj3s6Kgld003FunD0vkCI/preview"
+                                class="object-cover w-full h-full rounded-lg" id="present-iframe" loading="lazy">
+                                <p>Ocurrio un posible error</p>
+                            </iframe>
+                        </div>
+                        <div class="my-auto text-center md:text-left">
+                            <h3 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Concurrencia <span class="text-gray-500 dark:text-gray-400"> Semáforos</span>
+                            </h3>
+                            <p class="text-gray-500 dark:text-gray-400">En esta presentación, encontraras información sobre
+                                los conceptos fundamentales de los semáforos, sus distintos
+                                estados y cómo se aplican en la resolución de problemas de concurrencia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden p-4 bg-white dark:bg-gray-700" id="video" role="tabpanel" aria-labelledby="video-tab">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="h-96 xl:mx-10">
+                            <iframe src="https://drive.google.com/file/d/1Nz-9XbsgVr_iWFq002ogpsN4WMqmUyEA/preview"
+                                class="object-cover w-full h-full rounded-lg" id="present-iframe" loading="lazy">
+                                <p>Ocurrio un posible error</p>
+                            </iframe>
+                        </div>
+                        <div class="my-auto text-center md:text-left">
+                            <h3 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Crucigrama sobre semáforos
+                            </h3>
+                            <p class="pr-0 md:pr-2 text-center md:text-left text-gray-700 dark:text-gray-400">
+                                Actividad para el reforzamiento en base a los conocimientos obtenidos en la presentación
+                                del tema de semáforos.
+                            </p>
+                            <div class="flex items-center justify-center pt-2">
+                                <a href="https://es.educaplay.com/juego/14269751-crucigrama.html" target="_black"
+                                    class="w-full text-white text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-cyan-600 dark:hover:bg-cyan-700 focus:outline-none dark:focus:ring-cyan-800">
+                                    Comenzar actividad
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </CardTabs>
+        <Card id="actividad9">
+            <template v-slot:iframe>
+                <iframe src="https://drive.google.com/file/d/1VyYhm0KFGTg7M7fIShbAzkKDsyvgSKe8/preview"
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
+                    <p>Ocurrio un posible error</p>
+                </iframe>
+            </template>
+            <template v-slot:number>9</template>
+            <template v-slot:subtitle>Memoria</template>
+            <template v-slot:starts>
+                <!-- Estrellas de calificación -->
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>First star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Second star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Third star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+            </template>
+            <template v-slot:level>3.0</template>
+            <template v-slot:content>La actividad consiste en investigar y proporcionar información sobre los temas de
+                traducción de direcciones de memoria, tablas de memoria, memoria virtual y buffers.</template>
+        </Card>
+        <Card id="actividad10">
+            <template v-slot:iframe>
+                <iframe src="https://drive.google.com/file/d/1F0nNAIT4BLtHUnpLN0cEyFgvbpaobU2j/preview"
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
+                    <p>Ocurrio un posible error</p>
+                </iframe>
+            </template>
+            <template v-slot:number>10</template>
+            <template v-slot:subtitle>Entradas-Salidas</template>
+            <template v-slot:starts>
+                <!-- Estrellas de calificación -->
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>First star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Second star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Third star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+            </template>
+            <template v-slot:level>3.0</template>
+            <template v-slot:content>La actividad consiste en realizar un quiz que trata sobre los algoritmos de
+                planificación de disco vistos en clase.</template>
+        </Card>
+        <Card id="actividad11">
+            <template v-slot:iframe>
+                <iframe src="https://drive.google.com/file/d/13yGKedoxWEgTuWh6j5Ea_UW4yKGHcyJz/preview"
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
+                    <p>Ocurrio un posible error</p>
+                </iframe>
+            </template>
+            <template v-slot:number>11</template>
+            <template v-slot:subtitle>Archivos</template>
+            <template v-slot:starts>
+                <!-- Estrellas de calificación -->
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>First star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Second star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Third star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+            </template>
+            <template v-slot:level>3.0</template>
+            <template v-slot:content>La actividad consiste en investigar y listar las acciones que se pueden realizar en el
+                manejo de archivos y directorios. Después de realizar la investigación, se proporciona una lista de estas
+                acciones, así como una definición breve de cada una de
+                ellas.</template>
+        </Card>
+        <Card id="actividad12">
+            <template v-slot:iframe>
+                <iframe src="https://drive.google.com/file/d/19MqyOr8uBGdPcoCB6rBjt2AT5MQ7kA9Y/preview"
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
+                    <p>Ocurrio un posible error</p>
+                </iframe>
+            </template>
+            <template v-slot:number>12</template>
+            <template v-slot:subtitle>Archivos</template>
+            <template v-slot:starts>
+                <!-- Estrellas de calificación -->
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>First star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Second star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Third star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+            </template>
+            <template v-slot:level>3.0</template>
+            <template v-slot:content>La actividad consiste en realizar una investigación exhaustiva sobre los siguientes
+                temas: índices, dispersión, métodos de dispersión y solución de colisiones. Se profundiza en cada uno de
+                estos temas y se obtiene un conocimiento sólido sobre ellos. </template>
+        </Card>
         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/8qTasq4cjws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
     </section>
 </template>
