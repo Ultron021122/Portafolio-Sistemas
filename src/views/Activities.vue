@@ -999,38 +999,28 @@
                             </iframe>
                         </div>
                         <div class="my-auto text-center md:text-left">
-                            <h3 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                Concurrencia <span class="text-gray-500 dark:text-gray-400"> Semáforos</span>
-                            </h3>
-                            <p class="text-gray-500 dark:text-gray-400">En esta presentación, encontraras información sobre
-                                los conceptos fundamentales de los semáforos, sus distintos
-                                estados y cómo se aplican en la resolución de problemas de concurrencia.</p>
+                            <h1 class="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-4xl">
+                                <span
+                                    class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Python</span>
+                                Code.
+                            </h1>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Se utilizo el
+                                lenguaje python para desarrollar el problema del barbero dormilón llegamos a la solución
+                                mediante la investigación.</p>
                         </div>
                     </div>
                 </div>
                 <div class="hidden p-4 bg-white dark:bg-gray-700" id="video" role="tabpanel" aria-labelledby="video-tab">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                        <div class="h-96 xl:mx-10">
-                            <iframe src="https://drive.google.com/file/d/1Nz-9XbsgVr_iWFq002ogpsN4WMqmUyEA/preview"
-                                class="object-cover w-full h-full rounded-lg" id="present-iframe" loading="lazy">
-                                <p>Ocurrio un posible error</p>
-                            </iframe>
-                        </div>
-                        <div class="my-auto text-center md:text-left">
-                            <h3 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                Crucigrama sobre semáforos
-                            </h3>
-                            <p class="pr-0 md:pr-2 text-center md:text-left text-gray-700 dark:text-gray-400">
-                                Actividad para el reforzamiento en base a los conocimientos obtenidos en la presentación
-                                del tema de semáforos.
-                            </p>
-                            <div class="flex items-center justify-center pt-2">
-                                <a href="https://es.educaplay.com/juego/14269751-crucigrama.html" target="_black"
-                                    class="w-full text-white text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-cyan-600 dark:hover:bg-cyan-700 focus:outline-none dark:focus:ring-cyan-800">
-                                    Comenzar actividad
-                                </a>
-                            </div>
-                        </div>
+                    <div class="w-full md:w-3/4 lg:w-2/3 mx-auto">
+                        <h3
+                            class="text-center mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white md:pb-2">
+                            Barbero dormilón video</h3>
+                        <iframe src="https://www.youtube.com/embed/8qTasq4cjws" title="YouTube video player" frameborder="0"
+                            class="object-cover w-full h-64 md:h-96 rounded-lg"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen id="video-iframe" loading="lazy">
+                            <p>Ocurrio un posible error</p>
+                        </iframe>
                     </div>
                 </div>
             </template>
@@ -1074,7 +1064,7 @@
         </Card>
         <Card id="actividad10">
             <template v-slot:iframe>
-                <iframe src="https://drive.google.com/file/d/1F0nNAIT4BLtHUnpLN0cEyFgvbpaobU2j/preview"
+                <iframe src="https://drive.google.com/file/d/16WAW_rKkpzm_5MPMxxjsROw9Bor5vGSm/preview"
                     class="object-cover w-full h-full rounded-lg" loading="lazy">
                     <p>Ocurrio un posible error</p>
                 </iframe>
@@ -1186,7 +1176,6 @@
                 temas: índices, dispersión, métodos de dispersión y solución de colisiones. Se profundiza en cada uno de
                 estos temas y se obtiene un conocimiento sólido sobre ellos. </template>
         </Card>
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/8qTasq4cjws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
     </section>
 </template>
 <script>
@@ -1281,5 +1270,4 @@ export default {
 .zoom:hover {
     transform: scale(1.1);
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-</style>
+}</style>
