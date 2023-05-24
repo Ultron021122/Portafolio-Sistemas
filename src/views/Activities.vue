@@ -115,7 +115,7 @@
         <Card id="actividad0">
             <template v-slot:iframe>
                 <iframe src="https://drive.google.com/file/d/1NKA5yrwL7apulXVUmfiwf1kuG1_olR5b/preview"
-                    class="object-cover w-full h-full rounded-lg">
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
                     <p>Ocurrio un posible error</p>
                 </iframe>
             </template>
@@ -146,7 +146,7 @@
         <Card id="actividad1">
             <template v-slot:iframe>
                 <iframe src="https://drive.google.com/file/d/17R7plRzb8_9izJcUbkEXYOoFogb35vvV/preview"
-                    class="object-cover w-full h-full rounded-lg">
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
                     <p>Ocurrio un posible error</p>
                 </iframe>
             </template>
@@ -730,7 +730,7 @@
             <template v-slot:button>
                 <a href="https://docs.google.com/spreadsheets/d/1bKb7pRJu_N6d0xA_CHRozJW9fvA7Ciuo/edit?usp=sharing&ouid=103393318021344854854&rtpof=true&sd=true"
                     target="_black"
-                    class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-cyan-600 dark:hover:bg-cyan-700 focus:outline-none dark:focus:ring-cyan-800">
+                    class="w-full text-white text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-cyan-600 dark:hover:bg-cyan-700 focus:outline-none dark:focus:ring-cyan-800">
                     Ver actividad
                 </a>
             </template>
@@ -849,7 +849,8 @@
                                 La actividad consiste en realizar una investigación sobre un tema asignado al equipo al
                                 inicio del semestre. Los integrantes del equipo tenían que trabajar juntos para generar un
                                 documento en Google
-                                donde se involucrarían todos, incluyendo una portada grupal con los nombres de los integrantes.
+                                donde se involucrarían todos, incluyendo una portada grupal con los nombres de los
+                                integrantes.
                             </p>
                         </div>
                     </div>
@@ -865,55 +866,11 @@
                         </div>
                         <div class="my-auto text-center md:text-left">
                             <h3 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                Actividad de
-                                Aprendizaje 7
+                                Concurrencia <span class="text-gray-500 dark:text-gray-400"> Semáforos</span>
                             </h3>
-                            <h4 class="text-base font-semibold text-gray-900 dark:text-white">
-                                Concurrencia
-                            </h4>
-                            <div class="flex items-center justify-center md:justify-normal mt-2.5 mb-5">
-                                <!-- Estrellas de calificación -->
-                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <title>First star</title>
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <title>Second star</title>
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <title>Third star</title>
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <title>Fourth star</title>
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <!-- Etiqueta de dificultad -->
-                                <span
-                                    class="bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-                                    Dificultad: 4.0
-                                </span>
-                            </div>
-                            <!-- Descripción de la actividad -->
-                            <p class="pr-0 md:pr-2 text-center md:text-left text-gray-700 dark:text-gray-400">
-                                La actividad consiste en realizar una investigación sobre un tema asignado al equipo al
-                                inicio del semestre. Los integrantes del equipo deberán trabajar juntos para generar un
-                                documento en Google
-                                donde se involucren todos, incluyendo una portada grupal con los nombres de los integrantes.
-                            </p>
+                            <p class="text-gray-500 dark:text-gray-400">En esta presentación, encontraras información sobre
+                                los conceptos fundamentales de los semáforos, sus distintos
+                                estados y cómo se aplican en la resolución de problemas de concurrencia.</p>
                         </div>
                     </div>
                 </div>
@@ -928,60 +885,25 @@
                         </div>
                         <div class="my-auto text-center md:text-left">
                             <h3 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                Actividad de
-                                Aprendizaje 7
+                                Crucigrama sobre semáforos
                             </h3>
-                            <h4 class="text-base font-semibold text-gray-900 dark:text-white">
-                                Concurrencia
-                            </h4>
-                            <div class="flex items-center justify-center md:justify-normal mt-2.5 mb-5">
-                                <!-- Estrellas de calificación -->
-                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <title>First star</title>
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <title>Second star</title>
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <title>Third star</title>
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <title>Fourth star</title>
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <!-- Etiqueta de dificultad -->
-                                <span
-                                    class="bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-                                    Dificultad: 4.0
-                                </span>
-                            </div>
-                            <!-- Descripción de la actividad -->
                             <p class="pr-0 md:pr-2 text-center md:text-left text-gray-700 dark:text-gray-400">
-                                La actividad consiste en realizar una investigación sobre un tema asignado al equipo al
-                                inicio del semestre. Los integrantes del equipo deberán trabajar juntos para generar un
-                                documento en Google
-                                donde se involucren todos, incluyendo una portada grupal con los nombres de los integrantes.
+                                Actividad para el reforzamiento en base a los conocimientos obtenidos en la presentación
+                                del tema de semáforos.
                             </p>
+                            <div class="flex items-center justify-center pt-2">
+                                <a href="https://es.educaplay.com/juego/14269751-crucigrama.html"
+                                    target="_black"
+                                    class="w-full text-white text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-cyan-600 dark:hover:bg-cyan-700 focus:outline-none dark:focus:ring-cyan-800">
+                                    Comenzar actividad
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </template>
         </CardTabs>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/8qTasq4cjws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
     </section>
 </template>
 <script>
