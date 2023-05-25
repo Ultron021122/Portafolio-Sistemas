@@ -1011,12 +1011,12 @@
                     </div>
                 </div>
                 <div class="hidden p-4 bg-white dark:bg-gray-700" id="video" role="tabpanel" aria-labelledby="video-tab">
-                    <div class="w-full md:w-3/4 lg:w-2/3 mx-auto">
+                    <div class="w-full sm:w-3/4 lg:w-2/3 mx-auto">
                         <h3
                             class="text-center mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white md:pb-2">
                             Barbero dormilón video</h3>
                         <iframe src="https://www.youtube.com/embed/8qTasq4cjws" title="YouTube video player" frameborder="0"
-                            class="object-cover w-full h-64 md:h-96 rounded-lg"
+                            class="object-cover w-full h-64 sm:h-72 md:h-96 rounded-lg"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen id="video-iframe" loading="lazy">
                             <p>Ocurrio un posible error</p>
@@ -1177,6 +1177,289 @@
                 estos temas y se obtiene un conocimiento sólido sobre ellos. </template>
         </Card>
     </section>
+    <!-- Unidad 4 -->
+    <section class="bg-white dark:bg-gray-900 pt-4">
+        <div class="container md:w-11/12 lg:w-3/4 mx-auto">
+            <div class="mt-10">
+                <h2 class="text-center text-2xl md:text-3xl font-bold dark:text-white">Unidad temática 4.<small
+                        class="ml-2 flex justify-center md:inline-block font-semibold text-gray-500 dark:text-gray-400">Evaluación
+                        de los sistemas operativos</small></h2>
+            </div>
+            <div class="pt-10 pb-5">
+                <AccordionTop>
+                    <template v-slot:title>
+                        Objetivos de la unidad temática
+                    </template>
+                    <template v-slot:content>
+                        El estudiante evalúa la eficiencia de un sistema operativo.
+                    </template>
+                </AccordionTop>
+                <AccordionCenter>
+                    <template v-slot:title>
+                        Introducción
+                    </template>
+                    <template v-slot:content>
+                        En esta unidad se pretende que el estudiante pueda recomendar el uso y/o migración de un sistema
+                        operativo para ello es necesario identificar los aspectos a evaluar y cómo realizar la misma.
+                        <ol class="mt-2">
+                            <li class="mb-4">4. Evaluación de los sistemas operativos
+                                <ol class="ml-6 md:ml-9 lg:ml-12">
+                                    <li class="mb-2 mt-2">4.1 Conceptos varios</li>
+                                    <li class="mb-2 mt-2">4.1 Conceptos varios</li>
+                                    <li class="mb-2 mt-2">4.1 Conceptos varios</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </template>
+                </AccordionCenter>
+                <AccordionBottom>
+                    <template v-slot:title>
+                        Actividades
+                    </template>
+                    <template v-slot:content>
+                        <p class="text-center">A continuación se muestras las actividades de aprendizajes
+                            realizadas en la unidad.</p>
+                        <hr class="border-t border-gray-700 mt-2">
+                        <GridActivities>
+                            <template v-slot:title>
+                                Actividad de aprendizaje 13
+                            </template>
+                            <template v-slot:name-activity>
+                                Criptografía y Esteganografía
+                            </template>
+                            <template v-slot:date>
+                                14-may-2023
+                            </template>
+                            <template v-slot:link>
+                                <button @click="scrollToElement('#actividad13')"
+                                    class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                                    Ver actividad
+                                </button>
+                            </template>
+                        </GridActivities>
+                        <GridActivities>
+                            <template v-slot:title>
+                                Actividad de aprendizaje 14
+                            </template>
+                            <template v-slot:name-activity>
+                                Seguridad
+                            </template>
+                            <template v-slot:date>
+                                21-may-2023
+                            </template>
+                            <template v-slot:link>
+                                <button @click="scrollToElement('#actividad14')"
+                                    class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                                    Ver actividad
+                                </button>
+                            </template>
+                        </GridActivities>
+                        <GridActivities>
+                            <template v-slot:title>
+                                Actividad de aprendizaje 15
+                            </template>
+                            <template v-slot:name-activity>
+                                Glosario
+                            </template>
+                            <template v-slot:date>
+                                24-may-2023
+                            </template>
+                            <template v-slot:link>
+                                <button @click="scrollToElement('#actividad15')"
+                                    class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                                    Ver actividad
+                                </button>
+                            </template>
+                        </GridActivities>
+                        <GridActivities>
+                            <template v-slot:title>
+                                Actividad de aprendizaje 16
+                            </template>
+                            <template v-slot:name-activity>
+                                Portafolio de Evidencias
+                            </template>
+                            <template v-slot:date>
+                                24-may-2023
+                            </template>
+                            <template v-slot:link>
+                                <button @click="scrollToElement('#actividad16')"
+                                    class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                                    Ver actividad
+                                </button>
+                            </template>
+                        </GridActivities>
+                    </template>
+                </AccordionBottom>
+            </div>
+        </div>
+    </section>
+    <!-- Division -->
+    <section class="text-white dark:text-gray-900">
+        <div class="w-full h-auto">
+            <svg class="w-full h-16 sm:h-24 md:h-32 lg:h-48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                preserveAspectRatio="none">
+                <path class="my-svg" fill-opacity="1"
+                    d="M0,224L34.3,202.7C68.6,181,137,139,206,154.7C274.3,171,343,245,411,245.3C480,245,549,171,617,122.7C685.7,75,754,53,823,69.3C891.4,85,960,139,1029,165.3C1097.1,192,1166,192,1234,197.3C1302.9,203,1371,213,1406,218.7L1440,224L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+    <!-- Actividades -->
+    <section class="container mx-auto md:w-11/12 lg:w-3/4 mt-4 sm:mt-0 pb-4">
+        <div class="pb-12">
+            <h2 class="text-center text-3xl md:text-4xl font-bold dark:text-white">Actividades</h2>
+        </div>
+        <!-- Cards de actividades-->
+        <Card id="actividad13">
+            <template v-slot:iframe>
+                <iframe src="https://drive.google.com/file/d/1eWGEv6CjIjrbPdi_3T9Q0wBsLhohLv_N/preview"
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
+                    <p>Ocurrio un posible error</p>
+                </iframe>
+            </template>
+            <template v-slot:number>13</template>
+            <template v-slot:subtitle>Criptografía y Esteganografía</template>
+            <template v-slot:starts>
+                <!-- Estrellas de calificación -->
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>First star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Second star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Third star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+            </template>
+            <template v-slot:level>3.0</template>
+            <template v-slot:content>La actividad consiste en investigar dos temas relacionados: la criptografía y la
+                esteganografía, y comprender cómo se aplican tanto al sistema operativo como a las redes.</template>
+        </Card>
+        <Card id="actividad14">
+            <template v-slot:iframe>
+                <iframe src="https://drive.google.com/file/d/1l7o7TgvVksgrWQaBqM3SvE27nf3AkQ4K/preview"
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
+                    <p>Ocurrio un posible error</p>
+                </iframe>
+            </template>
+            <template v-slot:number>14</template>
+            <template v-slot:subtitle>Seguridad y protección</template>
+            <template v-slot:starts>
+                <!-- Estrellas de calificación -->
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>First star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Second star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Third star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+            </template>
+            <template v-slot:level>3.0</template>
+            <template v-slot:content>La actividad consiste en escribir un ensayo sobre el tema de seguridad y protección en
+                el sistema operativo y la red. Además, realizar un resumen sobre un libro o película relacionados con los
+                temas de investigación.</template>
+        </Card>
+        <Card id="actividad15">
+            <template v-slot:iframe>
+                <iframe src="https://drive.google.com/file/d/1QOiHxVE5dqd7S_WbWlWicn0F3cbXcbwo/preview"
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
+                    <p>Ocurrio un posible error</p>
+                </iframe>
+            </template>
+            <template v-slot:number>15</template>
+            <template v-slot:subtitle>Repaso</template>
+            <template v-slot:starts>
+                <!-- Estrellas de calificación -->
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>First star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Second star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Third star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+            </template>
+            <template v-slot:level>3.0</template>
+            <template v-slot:content>La actividad consiste en crear un glosario de 30 palabras clave relevantes que fueron
+                vistos a lo largo del curso. Estas palabras deben organizarse por temas y no deben repetirse.</template>
+        </Card>
+        <Card id="actividad16">
+            <template v-slot:iframe>
+                <iframe src="https://drive.google.com/file/d/1pEPra903GklU4yxpjIW8ys_z_gMr4BLc/preview"
+                    class="object-cover w-full h-full rounded-lg" loading="lazy">
+                    <p>Ocurrio un posible error</p>
+                </iframe>
+            </template>
+            <template v-slot:number>16</template>
+            <template v-slot:subtitle>Portafolio de evidencias</template>
+            <template v-slot:starts>
+                <!-- Estrellas de calificación -->
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>First star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Second star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Third star</title>
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+            </template>
+            <template v-slot:level>3.0</template>
+            <template v-slot:content>La actividad consiste en crear un sitio web utilizando Google Sites donde se recopilen
+                todas las actividades realizadas a lo largo del semestre. </template>
+        </Card>
+    </section>
 </template>
 <script>
 import Navbar from '../components/Navigation.vue';
@@ -1270,4 +1553,5 @@ export default {
 .zoom:hover {
     transform: scale(1.1);
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}</style>
+}
+</style>
