@@ -33,14 +33,27 @@ import Navbar from '../components/Navigation.vue'
     <div class="container md:w-11/12 lg:w-3/4 mx-auto mt-5" id="clase">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 dark:border-gray-700 dark:bg-gray-800 p-4">
             <div class="leading-normal mt-2 p-2">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Datos de la clase:
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">{{ clase }}
                 </h5>
-                <ul class="font-normal text-gray-700 dark:text-gray-400 list-disc list-inside">
-                    <li class="mb-1"><span>Clase:</span> {{ clase }}</li>
-                    <li class="mb-1"><span>Departamento:</span> {{ departamento }}</li>
-                    <li class="mb-1"><span>Profesora:</span> {{ profesor }}</li>
-                    <li class="mb-1"><span>Sección:</span> {{ seccion }}</li>
-                </ul>
+                <h5 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Departamento</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    {{ departamento }}
+                </p>
+                <h5 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Profesora:</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    {{ profesor }}
+                </p>
+                <h5 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Descripción</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Los sistemas operativos administran las diversas tareas y dispositivos conectados al equipo
+                    de cómputo (Tablet, computadora o Smartphone). La visión del sistema operativo para los desarrolladores
+                    de software es la de una plataforma sobre la cual se crean nuevas aplicaciones para el usuario, por ello
+                    el sistema operativo es la base de todo sistema de información. En esta unidad de aprendizaje se
+                    entenderá la importancia de los Sistemas Operativos, así como la comprensión de su operación y
+                    construcción permitiendo con ello aplicar estrategias de optimización para mejorar su rendimiento,
+                    conocerá los diferentes tipos de sistemas operativos, e identificara como está conformado y los
+                    servicios que presta.
+                </p>
             </div>
             <div class="p-4">
                 <img class="object-cover w-full h-auto rounded-lg" src="../assets/operating_system.jpg"
@@ -53,10 +66,9 @@ import Navbar from '../components/Navigation.vue'
 export default {
     data() {
         return {
-            clase: 'Uso, Adaptación y Explotación de Sistemas Operativos',
+            clase: 'Uso, Adaptación y Explotación de Sistemas Operativos 2023-A',
             departamento: 'Ciencias Computacionales',
             profesor: 'Becerra Velázquez Violeta del Roció',
-            seccion: 'D02',
         };
     }
 };
@@ -70,5 +82,4 @@ export default {
 
 .container {
     max-width: 95%;
-}
-</style>
+}</style>

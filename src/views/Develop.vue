@@ -6,8 +6,8 @@ import Navbar from '../components/Navigation.vue'
     <main class="bg-white dark:bg-gray-900 py-10">
         <div class="container md:w-11/12 lg:w-3/4 mx-auto">
             <div class="grid place-items-center grid-cols-1 md:grid-cols-2 gap-4 dark:border-gray-700 dark:bg-gray-800 p-4">
-                <div class="mt-2 p-2">
-                    <img class="object-cover w-96 h-96 rounded-full" src="../assets/github.svg"
+                <div class="py-2 h-96 mx-2 xl:mx-10">
+                    <img class="object-cover w-full h-full rounded-lg" src="../assets/tech.png"
                         alt="Imagen de operating system">
                 </div>
                 <div class="leading-normal mt-2 p-2">
@@ -17,7 +17,8 @@ import Navbar from '../components/Navigation.vue'
                         <li class="mb-1"><span>Nombre completo:</span> {{ nombreCompleto }}</li>
                         <li class="mb-1"><span>Número de estudiante:</span> {{ numeroEstudiante }}</li>
                         <li class="mb-1"><span>Carrera:</span> {{ otrosDatosPersonales }}</li>
-                        <li class="mb-1"><span>Correo electrónico:</span> {{ correoElectronico }}</li>
+                        <li class="mb-1"><span>Sección:</span> {{ seccion }}</li>
+                        <li class="mb-1"><span>Email:</span> {{ correoElectronico }}</li>
                     </ul>
                 </div>
             </div>
@@ -43,10 +44,7 @@ export default {
             numeroEstudiante: '220976438',
             correoElectronico: 'sebastian.martinez7643@alumnos.udg.mx',
             otrosDatosPersonales: 'Ingeniería Informática',
-            nombreCurso: '[Nombre del curso]',
-            nombreProfesor: '[Nombre del profesor/instructor]',
-            numeroSeccion: '[Número de sección]',
-            otrosDatosMateria: '[Cualquier otra información relevante sobre la materia]'
+            seccion: 'D02',
         };
     }
 };
