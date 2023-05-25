@@ -6,7 +6,7 @@ import Navbar from '../components/Navigation.vue'
     <main class="bg-white dark:bg-gray-900 py-10">
         <div class="container md:w-11/12 lg:w-3/4 mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 dark:border-gray-700 dark:bg-gray-800 p-4">
-                <div class="leading-normal p-4 text-center md:text-left">
+                <div class="leading-normal p-4">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white mt-2">Conclusión Final</h5>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">En conclusión, la clase de Uso, Adaptación
                         y Explotación de Sistemas Operativos ha sido fundamental para comprender y aplicar los conceptos y

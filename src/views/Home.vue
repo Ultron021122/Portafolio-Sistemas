@@ -24,7 +24,7 @@ import Navbar from '../components/Navigation.vue'
                     </svg>
                 </router-link>
                 <a href="#clase"
-                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-500 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                     Más sobre la clase
                 </a>
             </div>
@@ -32,10 +32,15 @@ import Navbar from '../components/Navigation.vue'
     </section>
     <div class="container md:w-11/12 lg:w-3/4 mx-auto mt-5" id="clase">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 dark:border-gray-700 dark:bg-gray-800 p-4">
-            <div class="leading-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Datos de clase</h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                    acquisitions of 2021 so far, in reverse chronological order.</p>
+            <div class="leading-normal mt-2 p-2">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Datos de la clase:
+                </h5>
+                <ul class="font-normal text-gray-700 dark:text-gray-400 list-disc list-inside">
+                    <li class="mb-1"><span>Clase:</span> {{ clase }}</li>
+                    <li class="mb-1"><span>Departamento:</span> {{ departamento }}</li>
+                    <li class="mb-1"><span>Profesora:</span> {{ profesor }}</li>
+                    <li class="mb-1"><span>Sección:</span> {{ seccion }}</li>
+                </ul>
             </div>
             <div class="p-4">
                 <img class="object-cover w-full h-auto rounded-lg" src="../assets/operating_system.jpg"
@@ -44,6 +49,18 @@ import Navbar from '../components/Navigation.vue'
         </div>
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            clase: 'Uso, Adaptación y Explotación de Sistemas Operativos',
+            departamento: 'Ciencias Computacionales',
+            profesor: 'Becerra Velázquez Violeta del Roció',
+            seccion: 'D02',
+        };
+    }
+};
+</script>
 <style scoped>
 @media (min-width: 480px) {
     .container {

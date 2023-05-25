@@ -5,32 +5,19 @@ import Navbar from '../components/Navigation.vue'
     <Navbar></Navbar>
     <main class="bg-white dark:bg-gray-900 py-10">
         <div class="container md:w-11/12 lg:w-3/4 mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 dark:border-gray-700 dark:bg-gray-800 p-4">
-                <div class="mt-2 p-4">
-                    <img class="object-cover w-full h-auto rounded-lg" src="../assets/system.png"
+            <div class="grid place-items-center grid-cols-1 md:grid-cols-2 gap-4 dark:border-gray-700 dark:bg-gray-800 p-4">
+                <div class="mt-2 p-2">
+                    <img class="object-cover w-96 h-96 rounded-full" src="../assets/github.svg"
                         alt="Imagen de operating system">
                 </div>
-                <div class="leading-normal p-4">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white mt-2">Conclusión Final
+                <div class="leading-normal mt-2 p-2">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Datos personales:
                     </h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">En conclusión, la clase de Uso, Adaptación
-                        y Explotación de Sistemas Operativos ha sido fundamental para comprender y aplicar los conceptos y
-                        principios fundamentales relacionados con los sistemas operativos. A lo largo del curso, hemos
-                        explorado diversas temáticas, desde investigaciones, ejercicios a exámenes de practica que han
-                        resultado ser funcionales.
-                    </p>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Me termina por parecer una excelente clase.
-                        La cual se que me va a servir para gestionar y no solo usar dispositivos tecnológicos sin saber como
-                        interactúan. Como futuro desarrollador me parece que es un pilar en una gran montaña de conocimiento
-                        por saber. El tema con el que me quedo en especial es el tema de algoritmos de planificación de
-                        memoria.
-                    </p>
-                    <h2 class="text-2xl font-bold mb-4">Datos personales:</h2>
-                    <ul>
-                        <li><span class="font-semibold">Nombre completo:</span> {{ nombreCompleto }}</li>
-                        <li><span class="font-semibold">Número de estudiante:</span> {{ numeroEstudiante }}</li>
-                        <li><span class="font-semibold">Carrera:</span> {{ otrosDatosPersonales }}</li>
-                        <li><span class="font-semibold">Correo electrónico:</span> {{ correoElectronico }}</li>
+                    <ul class="font-normal text-gray-700 dark:text-gray-400 list-disc list-inside">
+                        <li class="mb-1"><span>Nombre completo:</span> {{ nombreCompleto }}</li>
+                        <li class="mb-1"><span>Número de estudiante:</span> {{ numeroEstudiante }}</li>
+                        <li class="mb-1"><span>Carrera:</span> {{ otrosDatosPersonales }}</li>
+                        <li class="mb-1"><span>Correo electrónico:</span> {{ correoElectronico }}</li>
                     </ul>
                 </div>
             </div>
