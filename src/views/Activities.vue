@@ -1205,8 +1205,8 @@
                             <li class="mb-4">4. Evaluación de los sistemas operativos
                                 <ol class="ml-6 md:ml-9 lg:ml-12">
                                     <li class="mb-2 mt-2">4.1 Conceptos varios</li>
-                                    <li class="mb-2 mt-2">4.1 Conceptos varios</li>
-                                    <li class="mb-2 mt-2">4.1 Conceptos varios</li>
+                                    <li class="mb-2 mt-2">4.2 Seguridad</li>
+                                    <li class="mb-2 mt-2">4.3 Criptografía</li>
                                 </ol>
                             </li>
                         </ol>
